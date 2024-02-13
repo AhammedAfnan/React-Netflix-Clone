@@ -7,16 +7,23 @@
   display: flex;
   justify-content: space-between;
   background-color: #111;
+  z-index: 999;
+  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.4)50%);
 }
+
+.scrolled{
+  background-color: #111;
+}
+
 
 .logo {
   position: fixed;
-  left: 20px;
-  width: 80px;
+  left: 50px;
+  width: 100px;
 }
 
 .avatar {
   position: fixed;
-  right: 20px;
-  width: 30px;
+  right: 50px;
+  width: 35px;
 }

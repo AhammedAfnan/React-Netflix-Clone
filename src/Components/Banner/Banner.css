@@ -1,19 +1,25 @@
 .banner {
   background-size: cover;
-  height: 448px;
+  height: 600px;
   color: white;
+  position: relative;
 }
 
 .content {
-  padding-top: 140px;
+  padding-top: 200px;
   height: 190px;
-  padding-left: 15px;
+  padding-left: 45px;
+  text-shadow: 1px 1px #282727;
 }
 
 .title {
   font-size: 3rem;
   font-weight: 800;
   padding-bottom: 0.3rem;
+}
+
+/* .banner_buttons {
+  display: flex;
 }
 
 .button {
@@ -34,6 +40,53 @@
 .button:hover {
   color: black;
   background-color: #e6e6e6;
+} */
+
+.banner_buttons {
+  /* margin-top: 1.2rem; */
+  margin-top: 1.4rem;
+  display: flex;
+}
+
+.button {
+  color: white;
+  outline: none;
+  border: none;
+  /* font-size: 18px; */
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 4px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgba(51, 51, 51, .5);
+  cursor: pointer;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play {
+  background-color: #ffffff;
+  color: #111;
+}
+
+.info {
+  background-color: rgb(137, 134, 134, 0.9);
+}
+
+span {
+  margin-left: 5px;
+}
+
+.info:hover {
+  background-color: rgb(137, 134, 134, 0.6);
+}
+
+.play:hover {
+  background-color: rgb(190, 190, 190);
 }
 
 .description {
@@ -46,7 +99,7 @@
 }
 
 .fade_bottom {
-  height: 7.4rem;
+  height: 13.1rem;
   background-image: linear-gradient(
     180deg,
     transparent,
