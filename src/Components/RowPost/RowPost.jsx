@@ -41,8 +41,11 @@ function RowPost(props) {
       <h2 className='titles'>{props.title}</h2>
       <div className="posters"> 
       {movies.map((obj)=>
+        <div>
         <img onClick={()=>handleMovie(obj.id)} className={props.isSmall ? "smallPoster": "poster"} src={`${imageUrl+obj.backdrop_path}`} alt="poster" />
 
+      <p style={{ marginTop: "0.7rem", color:'white' }}>{obj?.title || obj?.name}</p>
+      </div>
       )}
      </div>
  {  urlId  &&  <YouTube opts={opts} videoId={urlId.key}/>   }
